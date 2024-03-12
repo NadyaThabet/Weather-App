@@ -156,6 +156,42 @@
   background-color: var(--backgroundColor);
 }
 
+.copy {
+  font-family: var(--comfortaa-font);
+  font-size: 14px;
+  padding: auto;
+}
+
+.name-span {
+  font-family: var(--nerko-font);
+  font-size: 25px;
+  color: var(--navHover-color);
+  font-style: italic;
+}
+
+.heart {
+  color: red;
+  font-style: italic;
+}
+
+.heart::before {
+  content: "❤";
+  display: inline-block;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Media Query */
 
 /* Extra Large Screens */
